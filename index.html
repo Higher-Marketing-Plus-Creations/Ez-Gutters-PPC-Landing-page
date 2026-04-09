@@ -3,179 +3,217 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EZ Gutters | PPC Landing Page</title>
-  <meta name="description" content="Stop water damage before it destroys your home. EZ Gutters installs seamless gutters and guards across Springfield, Nixa, Ozark, Republic, and Rogersville." />
+  <title>EZ Gutters Springfield MO</title>
+  <meta name="description" content="Protect your home with custom seamless gutters, lifetime warranty coverage, and fast local installs across SW Missouri." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#lead-form">Skip to free estimate</a>
+  <a class="skip-link" href="#lead-form">Skip to estimate form</a>
 
-  <header class="hero">
-    <div class="container">
-      <div class="hero-top">
-        <a class="brand" href="#top" id="top" aria-label="EZ Gutters home">
-          <span class="brand-ez">EZ</span><span class="brand-gutters">Gutters</span>
-        </a>
-        <a class="top-cta" href="#lead-form">Free Estimate</a>
-      </div>
-
-      <div class="hero-content">
-        <p class="hero-badge">SW MISSOURI'S #1 GUTTER COMPANY</p>
-        <h1>
-          Stop Water Damage
-          <span>Before It Destroys Your Home</span>
-        </h1>
-        <p class="hero-subcopy">
-          Seamless gutters. Lifetime warranty. Installed in one day. Serving Springfield, Nixa, Ozark, Republic and Rogersville.
-        </p>
-        <a class="main-cta" href="#lead-form">Get My Free Estimate -></a>
-
-        <ul class="trust-points" aria-label="Key value points">
-          <li><span aria-hidden="true">&#10003;</span> Lifetime warranty</li>
-          <li><span aria-hidden="true">&#10003;</span> Same-week installs</li>
-          <li><span aria-hidden="true">&#10003;</span> No cleaning required</li>
-          <li><span aria-hidden="true">&#10003;</span> Local crew</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="stats-strip">
-      <div class="container stats-grid">
-        <div class="stat">
-          <strong>500+</strong>
-          <p>Homes Protected</p>
-        </div>
-        <div class="stat">
-          <strong>Lifetime</strong>
-          <p>Warranty Included</p>
-        </div>
-        <div class="stat">
-          <strong>1-Day</strong>
-          <p>Install Guarantee</p>
-        </div>
-        <div class="stat">
-          <strong>5-star</strong>
-          <p>Google Rating</p>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" id="top" aria-label="EZ Gutters">
+        <span class="brand-ez">EZ</span><span class="brand-gutters">Gutters</span>
+      </a>
+      <a class="header-cta" href="#lead-form">Free Estimate</a>
     </div>
   </header>
 
   <main>
-    <section class="section section-light problem">
-      <div class="container">
-        <p class="eyebrow">Protect your home now</p>
-        <h2>If your gutters are failing, your home is already at risk.</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Overflow and pooling</h3>
-            <p>Water spills over the edge, soaks landscaping, and pools near your foundation.</p>
-          </article>
-          <article class="card">
-            <h3>Rot and structural damage</h3>
-            <p>Moisture around fascia, siding, and trim can lead to expensive repairs.</p>
-          </article>
-          <article class="card">
-            <h3>Constant clogging</h3>
-            <p>Debris buildup forces repeated cleaning and puts your safety at risk.</p>
-          </article>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Protect Your Home This Season</h1>
+          <p class="hero-subcopy">
+            Clogged or failing gutters lead to foundation damage, rot, and costly repairs. Our seamless gutter systems are custom-built for your home and backed by a lifetime warranty.
+          </p>
+
+          <ul class="benefit-list" aria-label="Benefits list">
+            <li>Seamless design - no leaky seams or joints</li>
+            <li>Built for Missouri rain and ice</li>
+            <li>Gutter guard options - never clean gutters again</li>
+            <li>Lifetime warranty on materials and labor</li>
+            <li>Fast installs - usually same week</li>
+            <li>Locally owned and operated</li>
+          </ul>
+
+          <a class="call-cta" href="tel:+14175550000">
+            <span class="phone-icon" aria-hidden="true">&#9742;</span>
+            <span>Call Us Directly</span>
+          </a>
         </div>
+
+        <aside class="lead-card" id="lead-form">
+          <p class="warranty-pill">Every install includes our lifetime warranty - free.</p>
+          <h2>Get Your Free Estimate</h2>
+          <p class="lead-note">No pressure. No obligation. Response within 1 business day.</p>
+
+          <form class="estimate-form" action="mailto:info@ezgutters.com" method="post" enctype="text/plain">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="full_name" type="text" placeholder="Jane Smith" required />
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="(417) 555-0000" required />
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="jane@email.com" required />
+
+            <label for="city">City / Town</label>
+            <select id="city" name="city" required>
+              <option value="" selected disabled>Select your area...</option>
+              <option>Springfield</option>
+              <option>Nixa</option>
+              <option>Ozark</option>
+              <option>Republic</option>
+              <option>Rogersville</option>
+              <option>Battlefield</option>
+              <option>SW Missouri</option>
+            </select>
+
+            <label for="need">What do you need? (optional)</label>
+            <textarea id="need" name="need" rows="3" placeholder="New install, repair, gutter guards..."></textarea>
+
+            <button type="submit">Get My Free Estimate -></button>
+            <p class="privacy-note">We respect your privacy. No spam, ever.</p>
+          </form>
+        </aside>
       </div>
     </section>
 
-    <section class="section section-dark solution">
-      <div class="container split-grid">
-        <div>
-          <p class="eyebrow">The EZ Gutters system</p>
-          <h2>The last gutter system your home should need.</h2>
-          <p>We design and install seamless gutters with high-performance guards built for Missouri weather and proper drainage.</p>
-        </div>
-        <ul class="solution-list">
-          <li>Custom seamless gutter installation</li>
-          <li>Gutter guard installation and upgrades</li>
-          <li>Repairs and full replacements</li>
-          <li>Fast turnaround from a reliable local team</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section-light">
+    <section class="section why">
       <div class="container">
-        <p class="eyebrow">Why homeowners choose us</p>
-        <h2>Installed right the first time with zero guesswork.</h2>
+        <h2>Why Homeowners Choose EZ Gutters</h2>
+        <p class="section-sub">We're not just another contractor - we're the last gutter company you'll ever need.</p>
+
         <div class="why-grid">
-          <article class="why-card">Lifetime protection</article>
-          <article class="why-card">Built for Missouri weather</article>
-          <article class="why-card">No hidden fees</article>
-          <article class="why-card">Fast installs</article>
-          <article class="why-card">No cleaning needed</article>
-          <article class="why-card">Local team you can reach</article>
+          <article class="why-card">
+            <p class="why-icon">&#128737;</p>
+            <h3>Lifetime Warranty</h3>
+            <p>Materials and labor covered for life. No fine print, no gotchas.</p>
+          </article>
+          <article class="why-card">
+            <p class="why-icon">&#9889;</p>
+            <h3>Fast Turnaround</h3>
+            <p>Most installs completed within the same week you call.</p>
+          </article>
+          <article class="why-card">
+            <p class="why-icon">&#9729;</p>
+            <h3>Missouri-Tough</h3>
+            <p>Custom-built for Ozarks weather - heavy rain, ice, and wind.</p>
+          </article>
+          <article class="why-card">
+            <p class="why-icon">&#9940;</p>
+            <h3>No More Cleaning</h3>
+            <p>Our gutter guard systems eliminate clogging for good.</p>
+          </article>
+          <article class="why-card">
+            <p class="why-icon">&#9651;</p>
+            <h3>Custom Seamless Fit</h3>
+            <p>Fabricated on-site to perfectly fit your home's roofline.</p>
+          </article>
+          <article class="why-card">
+            <p class="why-icon">&#129309;</p>
+            <h3>Local & Reliable</h3>
+            <p>Locally owned team - we stand behind every job we do.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-light social-proof">
+    <section class="section process">
       <div class="container">
-        <p class="eyebrow">Social proof</p>
-        <h2>Trusted by homeowners across SW Missouri.</h2>
-        <div class="card-grid">
-          <article class="quote-card">
-            <p>"Quick install, clean finish, and no more overflow in heavy rain."</p>
-            <span>- Springfield homeowner</span>
+        <h2>How It Works</h2>
+        <p class="section-sub">Simple, fast, and stress-free from start to finish.</p>
+
+        <div class="steps-top">
+          <article class="step">
+            <span class="step-num">1</span>
+            <h3>Request Estimate</h3>
+            <p>Fill out the form or call us. We'll confirm within 1 business day.</p>
           </article>
-          <article class="quote-card">
-            <p>"The team showed up on time, explained everything, and nailed it."</p>
-            <span>- Nixa homeowner</span>
+          <article class="step">
+            <span class="step-num">2</span>
+            <h3>Free On-Site Visit</h3>
+            <p>We measure your home and recommend the right system - no pressure.</p>
           </article>
-          <article class="quote-card">
-            <p>"Worth every dollar for peace of mind and a lifetime warranty."</p>
-            <span>- Republic homeowner</span>
+          <article class="step">
+            <span class="step-num">3</span>
+            <h3>Same-Week Install</h3>
+            <p>Our crew shows up on time and gets it done right, usually in one day.</p>
+          </article>
+        </div>
+
+        <article class="step step-bottom">
+          <span class="step-num">4</span>
+          <h3>Protected for Life</h3>
+          <p>Your warranty kicks in immediately. We handle any future issues.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2>What Homeowners Are Saying</h2>
+        <p class="section-sub">Real customers. Real results. Right here in SW Missouri.</p>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>
+              "EZ Gutters installed new seamless gutters and guards on our home in one day. Professional, friendly, and clean."
+            </blockquote>
+            <p class="author">Mike T.</p>
+            <p class="location">Nixa, MO</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>
+              "We had water pooling against our foundation for years. EZ came out, fixed it fast, and explained everything clearly."
+            </blockquote>
+            <p class="author">Sandra R.</p>
+            <p class="location">Republic, MO</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <blockquote>
+              "Fair price, clean work, and they cleaned up after themselves. Lifetime warranty gives us real peace of mind."
+            </blockquote>
+            <p class="author">David &amp; Carol M.</p>
+            <p class="location">Rogersville, MO</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-light faq">
+    <section class="section areas">
       <div class="container">
-        <p class="eyebrow">FAQ</p>
-        <h2>Answers before you book.</h2>
-        <div class="faq-list">
-          <details>
-            <summary>How long does installation take?</summary>
-            <p>Most installs are completed in one day, depending on roofline complexity and weather.</p>
-          </details>
-          <details>
-            <summary>Do I really need gutter guards?</summary>
-            <p>If you want lower maintenance and better flow year-round, gutter guards are a strong upgrade.</p>
-          </details>
-          <details>
-            <summary>What areas do you serve?</summary>
-            <p>Springfield, Nixa, Ozark, Republic, Rogersville, and nearby SW Missouri communities.</p>
-          </details>
-          <details>
-            <summary>What warranty do you provide?</summary>
-            <p>Our systems include a lifetime warranty for long-term homeowner confidence.</p>
-          </details>
+        <h2>Proudly Serving SW Missouri</h2>
+        <div class="area-pills">
+          <span>Springfield</span>
+          <span>Nixa</span>
+          <span>Ozark</span>
+          <span>Republic</span>
+          <span>Rogersville</span>
+          <span>Battlefield</span>
+          <span>SW Missouri</span>
         </div>
       </div>
     </section>
 
-    <section class="section final-cta" id="lead-form">
-      <div class="container">
-        <p class="eyebrow">Get started</p>
-        <h2>Get Gutters That Actually Work</h2>
-        <p class="final-copy">Free estimate. Lifetime warranty. Fast install guarantee.</p>
-        <a class="main-cta" href="mailto:info@ezgutters.com?subject=Free%20Estimate%20Request">Get Free Quote Now -></a>
-        <p class="service-area">Serving Springfield, Nixa, Rogersville, Republic, Ozark, and SW Missouri.</p>
+    <section class="section closing">
+      <div class="container closing-wrap">
+        <h2>Ready to Protect Your Home?</h2>
+        <p>Get your free, no-obligation estimate today. Most installs completed within the week.</p>
+        <a class="closing-cta" href="#lead-form">Get Free Estimate -></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
+    <div class="container footer-inner">
       <p>EZ Gutters</p>
       <p>&copy; 2026 EZ Gutters. All rights reserved.</p>
     </div>
