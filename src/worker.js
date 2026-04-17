@@ -41,10 +41,10 @@ async function handleLead(request, env) {
   }
 
   const resendKey = env.RESEND_API_KEY;
-  const emailTo   = env.LEAD_EMAIL_TO;
+  const emailTo   = (env.LEAD_EMAIL_TO || "").split(",").map(e => e.trim()).filter(Boolean);
   const emailFrom = env.LEAD_EMAIL_FROM;
 
-  if (!resendKey || !emailTo || !emailFrom) {
+  if (!resendKey || !emailTo.length || !emailFrom) {
     return new Response("Email service not configured.", { status: 500 });
   }
 
