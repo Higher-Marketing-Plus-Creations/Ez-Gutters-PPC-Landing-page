@@ -25,6 +25,6 @@ Lead notifications use Resend through the Cloudflare Worker route at `/api/lead`
 
 ```env
 RESEND_API_KEY=re_PASTE_YOUR_KEY_HERE
-LEAD_EMAIL_TO=leads@highermarketingplus.com
+LEAD_EMAIL_TO=leads@highermarketingplus.com,ezgutterzz@gmail.com,jonathan@highermarketingplus.com
 LEAD_EMAIL_FROM=HMP Leads <leads@highermarketingplus.com>
 ```
