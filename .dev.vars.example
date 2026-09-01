@@ -1,3 +1,14 @@
 RESEND_API_KEY=re_PASTE_YOUR_KEY_HERE
-LEAD_EMAIL_TO=leads@highermarketingplus.com,ezgutterss@gmail.com,jonathan@highermarketingplus.com
+# leads@highermarketingplusprojects.com is the HMP testing inbox — keep it on every site's list.
+LEAD_EMAIL_TO=leads@highermarketingplus.com,ezgutterss@gmail.com,jonathan@highermarketingplus.com,leads@highermarketingplusprojects.com
 LEAD_EMAIL_FROM=HMP Leads <leads@highermarketingplus.com>
+
+# Twilio SMS lead notifications (see /twilio/README.md for the full contract).
+# Set these as `wrangler secret put NAME` in production — never commit real values.
+TWILIO_ACCOUNT_SID=ACreplace_with_real_sid
+TWILIO_AUTH_TOKEN=replace_with_real_token
+TWILIO_PHONE_NUMBER=+1replace_with_twilio_number
+# Jonathan/admin — same on all 5 HMP client sites.
+ADMIN_PHONE_NUMBER=+19188012322
+# EZ Gutters' own displayed contact number (tel:+14172250149 on the live site).
+CLIENT_PHONE_NUMBER=+14172250149

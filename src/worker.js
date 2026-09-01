@@ -1,3 +1,7 @@
+import { normalizePhone, isValidPhone, sendLeadSms } from "./twilio-sms.js";
+
+const WEBSITE_NAME = "EZ Gutters (PPC Landing Page)";
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -29,7 +33,7 @@ async function handleLead(request, env) {
 
   const payload = {
     fullName: (data.full_name || "").trim(),
-    phone:    (data.phone    || "").trim(),
+    phone:    normalizePhone((data.phone || "").trim()),
     email:    (data.email    || "").trim(),
     city:     (data.city     || "").trim(),
     need:     (data.need     || "").trim(),
@@ -39,6 +43,24 @@ async function handleLead(request, env) {
   if (missing.length) {
     return new Response("Missing required fields.", { status: 400 });
   }
+
+  if (!isValidPhone(payload.phone)) {
+    return new Response("Please enter a valid phone number.", { status: 400 });
+  }
+
+  // Best-effort by design (see sendLeadSms) — a Twilio outage never blocks
+  // lead capture; the email send below still runs regardless of SMS outcome.
+  await sendLeadSms({
+    env,
+    websiteName: WEBSITE_NAME,
+    lead: {
+      name: payload.fullName,
+      phone: payload.phone,
+      email: payload.email,
+      service: payload.city,
+      message: payload.need,
+    },
+  });
 
   const resendKey = env.RESEND_API_KEY;
   const emailTo   = (env.LEAD_EMAIL_TO || "").split(",").map(e => e.trim()).filter(Boolean);

@@ -286,5 +286,24 @@
   <div class="mobile-cta">
     <a href="#lead-form">Tap Here -></a>
   </div>
+
+  <script>
+    // Prevent duplicate lead submissions (double-click / repeat Enter) while
+    // the POST to /api/lead is in flight. The form itself still submits
+    // natively — no AJAX — so a slow connection just leaves the button
+    // disabled until the browser navigates to /thanks.html.
+    document.querySelector(".estimate-form")?.addEventListener("submit", function (event) {
+      var button = this.querySelector('button[type="submit"]');
+      if (button) {
+        if (button.dataset.submitted) {
+          event.preventDefault();
+          return;
+        }
+        button.dataset.submitted = "true";
+        button.disabled = true;
+        button.textContent = "Sending...";
+      }
+    });
+  </script>
 </body>
 </html>
