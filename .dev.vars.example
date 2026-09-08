@@ -1,6 +1,6 @@
 RESEND_API_KEY=re_PASTE_YOUR_KEY_HERE
 # leads@highermarketingplusprojects.com is the HMP testing inbox — keep it on every site's list.
-LEAD_EMAIL_TO=leads@highermarketingplus.com,ezgutterss@gmail.com,jonathan@highermarketingplus.com,leads@highermarketingplusprojects.com
+LEAD_EMAIL_TO=leads@highermarketingplusprojects.com,ezgutterss@gmail.com,jonathan@highermarketingplus.com
 LEAD_EMAIL_FROM=HMP Leads <leads@highermarketingplus.com>
 
 # Twilio SMS lead notifications (see /twilio/README.md for the full contract).
